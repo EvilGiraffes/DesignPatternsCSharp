@@ -3,17 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{96E02D6C-1E21-49C8-B6FA-16EB0C7B6DCC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BC2A7233-E09A-4999-88EB-5689FAE02883}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		LICENSE.txt = LICENSE.txt
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Internals", "Internals\Internals.csproj", "{AC53C7A6-307E-474C-856C-A22ED9872255}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Internals", "Internals\Internals.csproj", "{AC53C7A6-307E-474C-856C-A22ED9872255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{28BDB1F9-FCFA-4BF6-AD43-CA9C1742241C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{28BDB1F9-FCFA-4BF6-AD43-CA9C1742241C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{DFA6FBAF-6631-43C9-9A36-F0F980D89FFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96E02D6C-1E21-49C8-B6FA-16EB0C7B6DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96E02D6C-1E21-49C8-B6FA-16EB0C7B6DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96E02D6C-1E21-49C8-B6FA-16EB0C7B6DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96E02D6C-1E21-49C8-B6FA-16EB0C7B6DCC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AC53C7A6-307E-474C-856C-A22ED9872255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AC53C7A6-307E-474C-856C-A22ED9872255}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC53C7A6-307E-474C-856C-A22ED9872255}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +30,10 @@ Global
 		{28BDB1F9-FCFA-4BF6-AD43-CA9C1742241C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28BDB1F9-FCFA-4BF6-AD43-CA9C1742241C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28BDB1F9-FCFA-4BF6-AD43-CA9C1742241C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA6FBAF-6631-43C9-9A36-F0F980D89FFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA6FBAF-6631-43C9-9A36-F0F980D89FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA6FBAF-6631-43C9-9A36-F0F980D89FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA6FBAF-6631-43C9-9A36-F0F980D89FFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
