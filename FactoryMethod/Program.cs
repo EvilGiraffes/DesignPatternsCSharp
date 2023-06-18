@@ -5,7 +5,6 @@ using Internals;
 string folder = Directory.GetCurrentDirectory();
 string filename = "MyVideoFile";
 string prompt = "Please input your quality >> ";
-int? maxRetries = null;
 StringComparer comparer = StringComparer.OrdinalIgnoreCase;
 Dictionary<string, IVideoSaverFactory> factories = new(comparer)
 {
@@ -13,11 +12,11 @@ Dictionary<string, IVideoSaverFactory> factories = new(comparer)
     { "high", new HDSaverFactory() },
     { "master", new FourKSaverFactory() }
 };
-InputListHandler inputListHandler = new(prompt, factories.Keys, comparer, maxRetries);
-string? input = inputListHandler.Get();
-if (input is null)
+Console.Write(prompt);
+if (!InputHelper.TryGetInput(factories.Keys, comparer, out string? input))
 {
-    Console.WriteLine("Program exiting...");
+    string inputMessage = input is null ? "null" : input;
+    Console.WriteLine($"Invalid input was given, got {inputMessage}");
     return;
 }
 IVideoSaverFactory factory = factories[input];
